@@ -57,7 +57,7 @@ set_background("Image/Young-Myocarditis-Heart-Concept.webp")
 st.title("Heart Disease Classification")
 
 # Define layout with two columns
-col1, col2 , col3= st.columns(2)
+col1, col2 , col3= st.columns(3)
 
 with col1:
     thal = st.number_input("thal", min_value=10, max_value=100, value=2)
