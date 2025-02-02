@@ -70,7 +70,7 @@ with col1:
 with col2:
     id = st.number_input("id", min_value=50, max_value=300, value=224)
     age = st.number_input("age", min_value=0, max_value=200, value=53)
-    sex = st.st.selectbox("sex", [0,1])
+    sex = st.selectbox("sex", [0,1])
     dataset = st.number_input("dataset", min_value=0, max_value=10, value=0)
     cp = st.number_input("cp", min_value=0, max_value=100, value=0)
     
