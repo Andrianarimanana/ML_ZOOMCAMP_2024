@@ -17,12 +17,8 @@ def set_background(image_file):
         background-image: url("data:image/jpg;base64,{encoded_image}");
         background-size: cover;
     }}
-    
-    h1, p {{
-        color: #FFFFFF;  /* Set font color for inputs */
-    }}
     h1, p, .stTextInput, .stNumberInput, .stSelectbox, .stButton {{
-        color: #FFFFFF;  /* Set font color for inputs */
+        color: #000000;  /* Set font color for inputs */
     }}
     
     .stButton button {{
