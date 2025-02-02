@@ -18,7 +18,7 @@ def set_background(image_file):
         background-size: cover;
     }}
     h1, p, .stTextInput, .stNumberInput, .stSelectbox, .stButton {{
-        color: #000000;  /* Set font color for inputs */
+        color: #FFFFFF;  /* Set font color for inputs */
     }}
     
     .stButton button {{
@@ -50,8 +50,9 @@ with open(model_file, 'rb') as f_in:
 # Set background image
 set_background("Image/Young-Myocarditis-Heart-Concept.webp")
 
-st.title("Heart Disease Classification")
-
+# st.title("Heart Disease Classification")
+st.markdown("<h1 style='color: white;'> Heart Disease Classification</h1>", unsafe_allow_html=True)
+st.markdown("<h7 style='color: white;'> Change the parmeter below and check the result of the prediction </h7>", unsafe_allow_html=True)
 # Define layout with two columns
 col1, col2 , col3= st.columns(3)
 
