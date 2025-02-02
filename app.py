@@ -45,7 +45,7 @@ def set_background(image_file):
 # Load the model and utilities 
 
 model_file = 'model_XGBClassifier.bin'
-model_file = 'model_XGBClassifier.bin'
+model_file = './model/model_XGBClassifier.pkl'
 model = joblib.load(model_file)  # Using joblib instead of pickle
 # with open(model_file, 'rb') as f_in:
 #     model = pickle.load(f_in) 
