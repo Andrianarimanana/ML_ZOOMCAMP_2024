@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import base64
 
-import pickle
+import joblib
 import pandas as pd
 
 
@@ -45,8 +45,10 @@ def set_background(image_file):
 # Load the model and utilities 
 
 model_file = 'model_XGBClassifier.bin'
-with open(model_file, 'rb') as f_in:
-    model = pickle.load(f_in) 
+model_file = 'model_XGBClassifier.bin'
+model = joblib.load(model_file)  # Using joblib instead of pickle
+# with open(model_file, 'rb') as f_in:
+#     model = pickle.load(f_in) 
 # Set background image
 set_background("Image/Young-Myocarditis-Heart-Concept.webp")
 
