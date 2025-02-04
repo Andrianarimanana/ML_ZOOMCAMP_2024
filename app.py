@@ -112,7 +112,7 @@ if st.button("Predict Performance"):
         # Make a prediction
         y_pred = model.predict(df)
         y_pred_class=int(y_pred[0])
-        match = {0: 'no heart disease', 1: 'Mild Heart Disease types', 2: 'Moderate Heart Disease type', 3: 'Heart Disease type', 4: 'Critical Heart Disease type'}
+        match = {0: 'no heart disease - lvl 0', 1: 'Mild Heart Disease - lvl 1', 2: 'Moderate Heart Disease type - lvl 2', 3: 'Heart Disease - lvl 3', 4: 'Critical Heart Disease - lvl 4'}
         y_pred_class = match[y_pred_class]
         st.success(f"Hear Prediction : {y_pred_class}")
         
