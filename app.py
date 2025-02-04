@@ -67,7 +67,7 @@ with col1:
     restecg = st.number_input("restecg", min_value=0, max_value=2, value=1)
     
 with col2:
-    id = st.number_input("id", min_value=1, max_value=300, value=920)
+    id = st.number_input("id", min_value=1, max_value=920, value=224)
     age = st.number_input("age", min_value=28, max_value=77, value=53)
     sex = st.selectbox("sex", [0,1])
     dataset = st.number_input("dataset", min_value=0, max_value=3, value=0)
